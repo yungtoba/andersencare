@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andersen Care | Dignifying Care Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="and.png" alt="Andersen Care" style="height: 50px; width: auto; object-fit: contain;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="our-services.html">Our Services</a></li>
+                <li><a href="supported-living.html">Supported Living</a></li>
+                <li><a href="key-services.html">Key Services</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="contact-us.html" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose"><i class="fas fa-times"></i></button>
+        <ul class="mobile-menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="our-services.html">Our Services</a></li>
+            <li><a href="supported-living.html">Supported Living</a></li>
+            <li><a href="key-services.html">Key Services</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Slider -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-slide-bg" style="background-image: url('elderly.png');"></div>
+                <div class="hero-content">
+                    <span class="hero-label">Trusted Care Since 2010</span>
+                    <h1 class="hero-title">Dignifying Care <span>Services</span> for Your Loved Ones</h1>
+                    <p class="hero-desc">Professional homecare, domiciliary care, and supported living services delivered with compassion, respect, and excellence.</p>
+                    <div class="hero-buttons">
+                        <a href="key-services.html" class="btn-primary">Our Services <i class="fas fa-arrow-right"></i></a>
+                        <a href="contact-us.html" class="btn-outline">Get in Touch <i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('ban2.png');"></div>
+                <div class="hero-content">
+                    <span class="hero-label">Compassionate Support</span>
+                    <h1 class="hero-title">Personalised Care <span>Tailored</span> to Individual Needs</h1>
+                    <p class="hero-desc">From elderly care to supported living, our trained professionals provide services that promote independence and enable choice.</p>
+                    <div class="hero-buttons">
+                        <a href="about-us.html" class="btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="contact-us.html" class="btn-outline">Book a Consultation <i class="fas fa-calendar"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('ban1.png');"></div>
+                <div class="hero-content">
+                    <span class="hero-label">Excellence in Care</span>
+                    <h1 class="hero-title">Qualified Staff <span>Dedicated</span> to Your Wellbeing</h1>
+                    <p class="hero-desc">Our care staff are trained, competent, and specifically selected based on the needs of each service user.</p>
+                    <div class="hero-buttons">
+                        <a href="training.html" class="btn-primary">Our Training <i class="fas fa-arrow-right"></i></a>
+                        <a href="contact-us.html" class="btn-outline">Contact Today <i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+        <div class="slider-arrows">
+            <button class="slider-arrow" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">15<span>+</span></div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500<span>+</span></div>
+                <div class="stat-label">Care Professionals</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2,000<span>+</span></div>
+                <div class="stat-label">Families Served</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98<span>%</span></div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Section - EXACT HOMEPAGE CONTENT -->
+    <!-- <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div class="fade-in">
+                    <img src="welcome.png" alt="Care professional" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 15px 50px rgba(0,0,0,0.12);">
+                </div>
+                <div class="fade-in">
+                    <span class="section-label">Welcome</span>
+                    <h2 style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem; line-height: 1.2; font-family: 'Playfair Display', serif;">Welcome to Andersen Care</h2>
+                    <p style="color: var(--text-dark); margin-bottom: 1rem; line-height: 1.8; font-size: 0.95rem;">Andersen Care is a leading provider of Homecare Services, Domiciliary Care and Supported Living Services that was founded after careful analysis of the spiralling demands on health and social care personnel. We recognised that the demand for quality temporary workers in the health and social care sectors often outweighs supply.</p>
+                    <p style="color: var(--text-dark); margin-bottom: 1rem; line-height: 1.8; font-size: 0.95rem;">Working to the principles of fairness, equality, transparency and valuing people; Andersen Care successfully works in close partnership with Care Homes, Local authorities, Residential and Nursing Homes as well as Public and Private Sector, providing care services that promote independence and enable choice and control to individuals in their own homes.</p>
+                    <p style="color: var(--text-dark); line-height: 1.8; font-size: 0.95rem;">The above services may be delivered on a one-one basis or through team of professionals with the shared aim of achieving better service outcomes for the service user.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Welcome Section RESPONSIVE VERSION -->
+<section class="section welcome-section">
+  <div class="container">
+    <div class="welcome-grid">
+      <div class="fade-in">
+        <img src="welcome.png" alt="Care professional" class="welcome-image" />
+      </div>
+
+      <div class="fade-in">
+        <span class="section-label">Welcome</span>
+
+        <h2 class="welcome-title">
+          Welcome to Andersen Care
+        </h2>
+
+        <p class="welcome-text">
+          Andersen Care is a leading provider of Homecare Services,
+          Domiciliary Care and Supported Living Services that was founded
+          after careful analysis of the spiralling demands on health and
+          social care personnel. We recognised that the demand for quality
+          temporary workers in the health and social care sectors often
+          outweighs supply.
+        </p>
+
+        <p class="welcome-text">
+          Working to the principles of fairness, equality, transparency and
+          valuing people; Andersen Care successfully works in close partnership
+          with Care Homes, Local authorities, Residential and Nursing Homes as
+          well as Public and Private Sector, providing care services that
+          promote independence and enable choice and control to individuals in
+          their own homes.
+        </p>
+
+        <p class="welcome-text">
+          The above services may be delivered on a one-one basis or through a
+          team of professionals with the shared aim of achieving better service
+          outcomes for the service user.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- CQC Widget & Accreditations -->
+ <section class="section cqc-widget">
+  <div class="container">
+    <div class="cqc-grid">
+      
+      <div class="fade-in">
+        <span class="section-label">Regulated & Accredited</span>
+
+        <h2 class="cqc-title">
+          Care Quality Commission
+        </h2>
+
+        <p class="cqc-text">
+          Andersen Care is registered with the Care Quality Commission (CQC),
+          ensuring we meet all national care standards and regulations.
+          View our latest inspection report below.
+        </p>
+
+        <script
+          type="text/javascript"
+          src="https://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-id=1-288773125&data-host=https://www.cqc.org.uk&type=location">
+        </script>
+      </div>
+
+      <div class="fade-in cqc-badges">
+        <div class="cqc-badge">
+          <img src="cqc.png" alt="Care Quality Commission" class="cqc-logo">
+          <p>CQC Registered</p>
+        </div>
+
+        <div class="cqc-badge">
+          <img src="unnamed.png" alt="Accreditation" class="cqc-logo">
+          <p>Fully Compliant</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- Services Range Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Expertise</span>
+                <h2 class="section-title">Comprehensive Care Services</h2>
+                <p class="section-desc">The range of services provided by the organisation include but are not limited to the following specialist areas.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3>Care for the Elderly</h3>
+                        <p>Specialist care for older adults promoting independence, dignity and quality of life in familiar surroundings.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-house-user"></i></div>
+                        <h3>Supported Living</h3>
+                        <p>Providing supported living services and accommodation for vulnerable adults within local communities and London Boroughs.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Mental Illness</h3>
+                        <p>Therapeutic support and care for individuals with mental illness promoting recovery, wellbeing and social inclusion.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-person-walking-with-cane"></i></div>
+                        <h3>Rehabilitation Care</h3>
+                        <p>Supporting recovery and re-enablement to help individuals regain independence and daily living skills.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-hands-holding-child"></i></div>
+                        <h3>Special Needs</h3>
+                        <p>Dedicated care for individuals with special needs ensuring personalised attention and daily living support.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-wheelchair"></i></div>
+                        <h3>Paraplegia</h3>
+                        <p>Comprehensive care for individuals with paraplegia focusing on mobility, independence and quality of life.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Learning Disabilities</h3>
+                        <p>Personalised support focusing on skill development, social inclusion and community participation.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Palliative Care</h3>
+                        <p>Providing comfort, dignity, and compassionate support for individuals with serious illnesses.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Eating Disorders</h3>
+                        <p>Specialised care and support for individuals managing eating disorders with sensitivity and understanding.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fas fa-user-nurse"></i></div>
+                        <h3>General Nursing & Care</h3>
+                        <p>Professional nursing and care services delivered with compassion, competence and clinical excellence.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: var(--accent); border-radius: 12px;">
+                <p style="color: var(--text-dark); font-size: 0.95rem;"><strong style="color: var(--primary);">Coming Soon:</strong> Alcohol Detoxification and Catering for progressive degenerative illnesses.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Respect and Dignity Section -->
+<section class="section dark-section">
+  <div class="container dignity-container">
+    <div class="dignity-items">
+
+      <div class="fade-in dignity-content">
+        <span class="section-label">Our Promise</span>
+
+        <h2 class="dignity-title">Respect and Dignity</h2>
+
+        <p class="dignity-text">
+          At Andersen Care, we place high significance on staff training
+          and Service User protection. Service Users are treated with respect
+          and dignity. Their needs are individually assessed and planned in
+          liaison with the family (if they wish).
+        </p>
+
+        <p class="dignity-text">
+          Our Care Staff are trained, competent and specifically selected
+          based on the needs of the Service User. We believe that all
+          recipients of our services should get best value and continuity
+          of care as far as practicable.
+        </p>
+
+        <p class="dignity-text">
+          We are committed to multi-agency working and will not spare any
+          time or money to get our services to any agreed and expected
+          standards.
+        </p>
+      </div>
+
+      <div class="fade-in">
+        <img src="caregroup.png" alt="Respect and dignity" class="dignity-image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Families Say About Us</h2>
+                <p class="section-desc">Hear from the families and individuals who have experienced the Andersen Care difference.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card fade-in" style="padding: 1.8rem;">
+                    <div style="font-size: 2.2rem; color: var(--secondary); opacity: 0.3; line-height: 1; margin-bottom: 0.8rem;">"</div>
+                    <p style="color: var(--text-dark); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.2rem; font-style: italic;">Andersen Care has been a lifeline for our family. The carers are not just professional but genuinely compassionate. My mother looks forward to their visits every day.</p>
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                      
+                        <div>
+                            <h4 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.1rem;">Sarah</h4>
+                            <span style="color: #475569; font-size: 0.78rem;">Daughter of Service User</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card fade-in" style="padding: 1.8rem;">
+                    <div style="font-size: 2.2rem; color: var(--secondary); opacity: 0.3; line-height: 1; margin-bottom: 0.8rem;">"</div>
+                    <p style="color: var(--text-dark); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.2rem; font-style: italic;">The level of care and attention to detail is outstanding. They took the time to understand my brother's specific needs with his learning disability and matched him with the perfect carer.</p>
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                        
+                        <div>
+                            <h4 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.1rem;">James</h4>
+                            <span style="color: #475569; font-size: 0.78rem;">Brother of Service User</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card fade-in" style="padding: 1.8rem;">
+                    <div style="font-size: 2.2rem; color: var(--secondary); opacity: 0.3; line-height: 1; margin-bottom: 0.8rem;">"</div>
+                    <p style="color: var(--text-dark); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1.2rem; font-style: italic;">From the very first conversation, Andersen Care made our family feel supported and understood. The carers showed genuine kindness, patience, and respect, treating my mother with the same warmth and dignity they would their own loved one. Knowing she is in such caring hands gives us complete peace of mind every day. We couldn't be more grateful for the exceptional care and compassion they provide.</p>
+                   
+                            <h4 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.1rem;">Emily</h4>
+                            <span style="color: #475569; font-size: 0.78rem;">Daughter of Service user</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Quality Care?</h2>
+                <p>Contact us today to discuss your care needs. Our team is ready to provide a personalised care plan that puts dignity and independence first.</p>
+                <div class="cta-buttons">
+                    <a href="contact-us.html" class="btn-white">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
+                    <a href="tel:02084938742" class="btn-outline">Call 0208 493 8742 <i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Hero Slider
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                slide.style.opacity = '0';
+                dots[i].style.background = 'rgba(255,255,255,0.3)';
+                dots[i].style.transform = 'scale(1)';
+            });
+            slides[index].classList.add('active');
+            slides[index].style.opacity = '1';
+            dots[index].style.background = 'var(--secondary)';
+            dots[index].style.transform = 'scale(1.3)';
+            currentSlide = index;
+        }
+
+        function nextSlide() { showSlide((currentSlide + 1) % slides.length); }
+        function prevSlide() { showSlide((currentSlide - 1 + slides.length) % slides.length); }
+        function startAutoSlide() { slideInterval = setInterval(nextSlide, 6000); }
+        function stopAutoSlide() { clearInterval(slideInterval); }
+
+        document.getElementById('nextSlide').addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
+        document.getElementById('prevSlide').addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => { stopAutoSlide(); showSlide(index); startAutoSlide(); });
+        });
+        startAutoSlide();
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 0.6rem; display: inline-flex; align-items: center; gap: 0.75rem;">
+                        <img src="and.png" alt="Andersen Care" style="height: 50px; width: auto; object-fit: contain;">
+                    </a>
+                    <p>Leading provider of Homecare Services, Domiciliary Care and Supported Living Services. Committed to dignity, respect, and excellence in care.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="supported-living.html">Supported Living</a></li>
+                        <li><a href="key-services.html">Key Services</a></li>
+                        <li><a href="our-services.html">Our Services</a></li>
+                        <li><a href="training.html">Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="our-services.html">Live-in Care</a></li>
+                        <li><a href="our-services.html">Home Care</a></li>
+                        <li><a href="our-services.html">Personal Care</a></li>
+                        <li><a href="our-services.html">Domestic Help</a></li>
+                        <li><a href="our-services.html">Care Home Staff</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Get in Touch</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Andersen Care. All rights reserved.</p>
+                <p>CQC Registered | Homecare Association Member</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileLinks = document.querySelectorAll('.mobile-menu-links a');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+        // Scroll Animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
